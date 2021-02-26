@@ -7,6 +7,10 @@
     <body>
       <a href="#footer">footer</a>
     <h1>Devin's 1<sup>st</sup> Web Page</h1>
+    <form action="#" method="POST">
+        <label for="query">Search</label><br />
+        <input id="query" type="search" name="search" placeholder="Search Here" />
+    </form>
     <p>This page is created for the sole purpose of practicing what I've been learning so far in Web development</p>
     <hr />
     <p>
@@ -17,6 +21,8 @@
             <li>Adding links to web pages</li>
             <li>Adding images to a web page</li>
             <li>Making a List using html</li>
+            <li>How to make tables</li>
+            <li>How to create forms</li>
         </ul>
         <br />
         Things I plan to accomplish:
@@ -36,7 +42,88 @@
     <figcaption>
         I am learning Programming
     </figcaption> 
-</figure>
+</figure><br />
+<table>
+    <thead>
+        <th></th>
+        <th scope="col">Food and Drink</th>
+        <th scope="col">Housing</th>
+        <th scope="col">Clothing</th>
+        <th scope="col">Entertainment</th>
+    </thead>
+    <tbody>
+        <tr>
+        <th scope="row">France</th>
+        <td colspan="2">20%</td>
+        <td>50%</td>
+        <td>40%</td>
+        </tr>
+        <tr>
+        <th scope="row">China</th>
+        <td>70%</td>
+        <td>45%</td>
+        <td>56%</td>
+        <td>93%</td>
+        </tr>
+        <tr>
+            <th scope="row">Japan</th>
+            <td rowspan="2">65%</td>
+            <td>42%</td>
+            <td>29%</td>
+            <td>73%</td>
+        </tr>
+        <tr>
+            <th scope="row">Korea</th>
+            <td>70%</td>
+            <td>83%</td>
+            <td>29%</td>
+        </tr>
+    </tbody>
+</table><br /><hr />
+<form action="#" method="post">
+    <fieldset>
+        <legend>Personal Information</legend>
+        <label>* First name:   </label><input type="text" name="name" placeholder="First name" /></label><br />
+        <label for="middlename"> Middle name:</label>
+        <input id="middlename" type="text" name="name" placeholder="Middle name" /><br />
+        <label for="surname">* Surname:</label>
+        <input id="surname" type="text" name="name" placeholder="Surname" /><br />
+        <label for="password">* Password:</label>
+        <input id="password" type="password" name="pass" placeholder="Password" />
+    </fieldset>
+</form><br />
+<form action="#" method="post">
+    <fieldset>
+        <legend>Address</legend>
+        <label for="address">Address:</label>
+        <input id="address" type="text" name="address" placeholder="Address"><br />
+        <label for="state">State:</label>
+        <select name="state">
+            <option value="anambra">Anambra</option>
+            <option value="enugu">Enugu</option>
+            <option value="imo">Imo</option>
+        </select><br />
+        <label for="email">Email:</label>
+        <input id="email" type="email" name="email" value="email" placeholder="Email">
+        <p>Choose Between These Options:</p>
+        <label for="volume">Volume</label>
+        <input id="volume" type="radio" name="options" checked>
+        <label for="weight">Weight</label>
+        <input id="weight" type="radio" name="options"><br />
+        <input id="terms" type="checkbox" name="terms" checked>
+        <label for="terms">Agree to Terms and Conditions</label>
+    </fieldset>
+</form>
+<form action="#" method="post">
+    <fieldset>
+        <p>What do you think about this webpage?</p>
+        <label for="comments"></label>
+        <textarea cols="50" rows="4" id="comments" placeholder="Write your comments here" maxlength="100">
+
+        </textarea>
+        <button>Add</button>
+    </fieldset>
+</form>
 <p id="footer">Footer</p>
   </body>
 </html>
