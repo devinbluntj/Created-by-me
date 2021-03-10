@@ -17,6 +17,7 @@
             font-weight: bolder;
             text-transform: uppercase;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-shadow: 2.5px 2.5px 5px black;
         }
         #web a {
             color: orangered;
@@ -34,6 +35,16 @@
             background-color: rgb(245, 245, 220);
             color: #008080;
             opacity: 0.75;
+            width: 500px;
+            border-width: 5px 2.5px 5px 2.5px;
+            border-style: dashed solid;
+            border-color: black;
+            padding: 25px;
+            margin: 50px 10px 25px 10px;
+            border-radius: 10px;
+            margin: auto;
+            box-shadow: 10px 10px 5px;
+            line-height: 20ems;
         }
         p[class="intro"]:first-letter {
             font-weight: bold;
@@ -45,6 +56,19 @@
         h1 {
             letter-spacing: 0.2em;
             word-spacing: inherit;
+        }
+        form.user {
+            background-color: gray;
+            min-width: 200px;
+            max-width: 500px;
+            width: 500px;
+            border-width: 5px 2.5px 5px 2.5px;
+            border-style: solid;
+            border-color: indigo;
+            padding: 30px;
+            margin: 30px 15px 30px 15px;
+            line-height: 30ems;
+            margin: auto;
         }
         </style>
     </head>
@@ -119,11 +143,11 @@
         </tr>
     </tbody>
 </table><br /><hr />
-<form action="#" method="post">
+<form class="user" action="#" method="post">
     <fieldset>
         <legend>Personal Information</legend>
         <label>* First name:   </label><input type="text" name="name" placeholder="First name" /></label><br />
-        <label for="middlename"> Middle name:</label>
+        <label for="middlename">* Middle name:</label>
         <input id="middlename" type="text" name="name" placeholder="Middle name" /><br />
         <label for="surname">* Surname:</label>
         <input id="surname" type="text" name="name" placeholder="Surname" /><br />
