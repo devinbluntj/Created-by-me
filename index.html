@@ -57,18 +57,66 @@
             letter-spacing: 0.2em;
             word-spacing: inherit;
         }
-        form.user {
-            background-color: gray;
-            min-width: 200px;
-            max-width: 500px;
-            width: 500px;
-            border-width: 5px 2.5px 5px 2.5px;
-            border-style: solid;
-            border-color: indigo;
-            padding: 30px;
-            margin: 30px 15px 30px 15px;
-            line-height: 30ems;
-            margin: auto;
+        fieldset.user {
+            width: 350px;
+            border: 5px inset grey;
+            line-height: 1.5em;
+            background-color: mintcream;
+            }
+        legend.user {
+            font-weight: bold;
+            color: darkolivegreen;
+            text-shadow: -1px -1px 1px blue;
+        }    
+        div#user {
+            border-bottom: 1px solid #efefef;
+            margin: 1px;
+            padding-bottom: 1px;
+        }
+        input.user {
+            float: right;
+            margin-left: 1px;
+            border-radius: 2px;
+        }
+        ul {
+            list-style-type: circle;
+            line-height: 1.5em;
+        }
+        ol {
+            list-style-type: upper-roman;
+            line-height: 1.5em;
+        }
+        table {
+            width: 480px;
+        }
+        th, td {
+            padding: 3px 6px 3px 6px;
+            
+        }
+        thead {
+            text-align: left;   
+            text-transform: uppercase;
+        }
+        th.head {
+            border-top: 2px solid black;
+            border-bottom: 2px dashed black;
+            background-color: burlywood;
+            border-radius: 2px;
+            text-align: center;
+        }
+        th.country {
+            border: 1px solid black;
+            border-radius: 2px;
+            background-color: burlywood;
+            text-align: left;
+        }
+        td {
+            border-left: 1px solid black;
+            border-bottom: 1px solid black;
+            border-radius: 2px;
+            text-align: right;
+            background-color:rgb(47, 79, 79);
+            color: white;
         }
         </style>
     </head>
@@ -108,51 +156,52 @@
     </p>
 <table>
     <thead>
-        <th></th>
-        <th scope="col">Food and Drink</th>
-        <th scope="col">Housing</th>
-        <th scope="col">Clothing</th>
-        <th scope="col">Entertainment</th>
+        <th class="head"></th>
+        <th class="head" scope="col">Food</th>
+        <th class="head" scope="col">Housing</th>
+        <th class="head" scope="col">Clothing</th>
+        <th class="head" scope="col">Entertainment</th>
     </thead>
     <tbody>
         <tr>
-        <th scope="row">France</th>
+        <th class="country" scope="row">France</th>
         <td colspan="2">20%</td>
         <td>50%</td>
         <td>40%</td>
         </tr>
         <tr>
-        <th scope="row">China</th>
+        <th class="country" scope="row">China</th>
         <td>70%</td>
         <td>45%</td>
         <td>56%</td>
         <td>93%</td>
         </tr>
         <tr>
-            <th scope="row">Japan</th>
+            <th class="country" scope="row">Japan</th>
             <td rowspan="2">65%</td>
             <td>42%</td>
             <td>29%</td>
             <td>73%</td>
         </tr>
         <tr>
-            <th scope="row">Korea</th>
+            <th class="country" scope="row">Korea</th>
             <td>70%</td>
             <td>83%</td>
             <td>29%</td>
         </tr>
     </tbody>
 </table><br /><hr />
-<form class="user" action="#" method="post">
-    <fieldset>
-        <legend>Personal Information</legend>
-        <label>* First name:   </label><input type="text" name="name" placeholder="First name" /></label><br />
-        <label for="middlename">* Middle name:</label>
-        <input id="middlename" type="text" name="name" placeholder="Middle name" /><br />
-        <label for="surname">* Surname:</label>
-        <input id="surname" type="text" name="name" placeholder="Surname" /><br />
-        <label for="password">* Password:</label>
-        <input id="password" type="password" name="pass" placeholder="Password" />
+<form action="#" method="post">
+    <fieldset class="user">
+        <legend class="user">Personal Information</legend>
+        <div id="user"><label>* First name: 
+        <input type="text" class="user" name="name" placeholder="First name" /></label><br></div>
+        <div id="user"><label for="middlename">* Middle name:</label>
+        <input id="middlename" class="user" type="text" name="name" placeholder="Middle name" /><br></div>
+        <div id="user"><label for="surname">* Surname:</label>
+        <input id="surname" class="user" type="text" name="name" placeholder="Surname" /><br></div>
+        <div id="user"><label for="password">* Password:</label>
+        <input id="password" class="user" type="password" name="pass" placeholder="Password" /><br></div>
     </fieldset>
 </form><br />
 <form action="#" method="post">
